@@ -34,7 +34,7 @@ def openFile(path):
             index += 1
 
         df = pd.DataFrame.from_dict(df, orient='index')
-        df.to_csv('reviews.csv')
+        df.to_csv('reviews.csv', index=False)
     else:
         df = pd.read_csv('reviews.csv')
 
